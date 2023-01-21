@@ -15,7 +15,7 @@ export class ChangeNumberComponent implements OnInit {
     
   }
   handleClick() {
-    console.log('será?')
+    
     this.changeNumber.emit();
     
   }

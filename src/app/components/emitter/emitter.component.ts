@@ -18,7 +18,6 @@ myNumber: number = 2;
     
   }
   onChangeNumber() {
-    console.log('deu certo')
     this.myNumber = Math.floor(Math.random() *12);
   }
 
