@@ -29,8 +29,8 @@ this.animalDetails = `O pet ID: ${animal.id} ${animal.name} tem ${animal.age} an
   }
 
   removeAnimal(animal: Animal){
-    console.log('Removendo Animal...')
-    this.animals = this.listService.remove(this.animals, animal);
+    this.animals = this.animals.filter((a) => animal.name !== a.name);
+    this.listService.remove(animal.id).subscribe();
   }
 
   getAnimals(): void {
